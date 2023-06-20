@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <aside class="sidebar">
@@ -50,6 +51,7 @@
                     <div class="input-label-container">
                         <label for="password">PASSWORD</label>
                         <input type="password" id="password" name="password" required>
+                        <span id="error-message"></span>
                     </div>
                     <div class="input-label-container">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
@@ -57,8 +59,10 @@
                     </div>
                 </div>
             </section>
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
+            <section>
+                <button type="submit">Create Account</button>
+                <p class="login-paragraph">Already have an account? <a href="#">Log in</a></p>
+            </section>
         </form>
     </main>
 </body>

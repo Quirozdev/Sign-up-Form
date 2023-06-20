@@ -64,7 +64,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #f9fafc;
+    background-color: #233142;
+    color: white;
     flex: 3;
     min-width: 200px;
 }
@@ -74,7 +75,7 @@ section {
 }
 
 .disclaimer-section > p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 1.2;
 }
@@ -84,7 +85,7 @@ section {
 }
 
 .form-section {
-    background-color: white;
+    background-color: #455D7A;
 }
 
 .inputs-container {
@@ -94,12 +95,60 @@ section {
     margin: 16px 0;
 }
 
+label {
+    color: #dbd8e3;
+    font-size: 14px;
+}
+
 .input-label-container {
     display: flex;
     flex-direction: column;
-    min-width: 150px;
+    min-width: 200px;
 }
 
 input {
     padding: 4px;
+    border-radius: 4px;
+    border: 2px solid #E5E7EB;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 1px 3px 3px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+#error-message {
+    color: red;
+    font-size: 13px;
+}
+
+button[type="submit"] {
+    background-color: #596D48;
+    padding: 12px 48px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+button[type="submit"]:hover {
+    background-color: #77ae46;
+    color: #596D48;
+}
+
+.login-paragraph {
+    font-size: 18px;
+}
+
+.login-paragraph a {
+    text-decoration: none;
+    color: #77ae46;
 }
